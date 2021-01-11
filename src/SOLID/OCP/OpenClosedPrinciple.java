@@ -35,6 +35,7 @@ public class OpenClosedPrinciple {
         itemStream = new ItemFilter().doFilter(items,mediumShapeSpecification);
         System.out.println("Medium filter");
         itemStream.forEach(System.out::print);
+
     }
 }
 
