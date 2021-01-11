@@ -36,6 +36,7 @@ public class OpenClosedPrinciple {
         System.out.println("Medium filter");
         itemStream.forEach(System.out::print);
 
+
     }
 }
 
