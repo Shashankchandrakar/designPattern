@@ -1,20 +1,17 @@
-package singleton;
+package pattern.singleton;
 
 import java.util.HashMap;
 
-enum Subsystem
-{
+enum Subsystem {
     PRIMARY,
     AUXILIARY,
     FALLBACK
 }
 
-class Printer
-{
+class Printer {
     private static int INSTANCE_COUNT = 0;
 
-    private Printer()
-    {
+    private Printer() {
         INSTANCE_COUNT++;
         System.out.println("A total of " +
                 INSTANCE_COUNT + " instances created so far.");
@@ -23,8 +20,7 @@ class Printer
     private static final HashMap<Subsystem, Printer>
             INSTANCES = new HashMap<>();
 
-    public static Printer get(Subsystem ss)
-    {
+    public static Printer get(Subsystem ss) {
         if (INSTANCES.containsKey(ss))
             return INSTANCES.get(ss);
 

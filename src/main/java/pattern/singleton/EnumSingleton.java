@@ -1,4 +1,4 @@
-package singleton;
+package pattern.singleton;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -54,9 +54,9 @@ public class EnumSingleton {
 
         // run again with next 3 lines commented out
 
-//        EnumBasedSingleton singleton = EnumBasedSingleton.INSTANCE;
-//        singleton.setValue(111);
-//        saveToFile(singleton, filename);
+//        EnumBasedSingleton pattern.singleton = EnumBasedSingleton.INSTANCE;
+//        pattern.singleton.setValue(111);
+//        saveToFile(pattern.singleton, filename);
 
         EnumBasedSingleton singleton2 = readFromFile(filename);
         System.out.println(singleton2.getValue());
